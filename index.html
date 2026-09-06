@@ -3,450 +3,227 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CUTLER LAYER — Attribution Integrity Pre-Workout</title>
-<meta name="description" content="96/100. SHIPS. Zero filler prompts. The Cutler Layer scores AI master prompts against an 8-dimension Attribution Integrity Gate.">
+<title>ATTRIBUTION INTEGRITY GATE — The Reallocation Call</title>
+<meta name="description" content="A director-level stress-test for AI-influenced media-mix decisions, and the AI Council Decision Layer that sits above it. All data synthetic.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --ink:#0a0a0a;
-    --ink-2:#141414;
-    --paper:#f4efe2;
-    --paper-2:#e9e2cf;
-    --lime:#d4ff3f;
-    --lime-dim:#a8cc2e;
-    --red:#ff4b3e;
-    --chrome-1:#ffffff;
-    --chrome-2:#c7c7c7;
-    --chrome-3:#6c6c6c;
-    --line:#2a2a2a;
-    --display: 'Anton', sans-serif;
-    --body: 'Work Sans', sans-serif;
-    --mono: 'Space Mono', monospace;
-  }
-
-  *{box-sizing:border-box; margin:0; padding:0;}
-
+  :root{--ink:#0a0a0a;--ink-2:#141414;--paper:#f4efe2;--paper-2:#e9e2cf;--lime:#d4ff3f;--lime-dim:#a8cc2e;--red:#ff4b3e;--chrome-1:#ffffff;--chrome-2:#c7c7c7;--chrome-3:#6c6c6c;--line:#2a2a2a;--display:'Anton',sans-serif;--body:'Work Sans',sans-serif;--mono:'Space Mono',monospace;}
+  *{box-sizing:border-box;margin:0;padding:0;}
   html{scroll-behavior:smooth;}
-
-  body{
-    background:var(--ink);
-    color:var(--paper);
-    font-family:var(--body);
-    overflow-x:hidden;
-    line-height:1.5;
-  }
-
-  ::selection{background:var(--lime); color:var(--ink);}
-
-  a{color:inherit; text-decoration:none;}
-
-  img,svg{display:block; max-width:100%;}
-
-  .wrap{
-    max-width:1180px;
-    margin:0 auto;
-    padding:0 28px;
-  }
-
-  :focus-visible{outline:3px solid var(--lime); outline-offset:3px;}
-
-  /* ============ TICKER ============ */
-  .ticker{
-    background:var(--lime);
-    color:var(--ink);
-    font-family:var(--mono);
-    font-weight:700;
-    font-size:13px;
-    letter-spacing:0.06em;
-    text-transform:uppercase;
-    border-bottom:3px solid var(--ink);
-    overflow:hidden;
-    white-space:nowrap;
-    position:relative;
-  }
-  .ticker-track{
-    display:inline-flex;
-    animation:tick 32s linear infinite;
-    padding:10px 0;
-  }
-  .ticker-track span{padding:0 22px; display:inline-flex; align-items:center; gap:10px;}
-  .ticker-track span::after{content:"◆"; color:var(--ink); opacity:.55; font-size:10px;}
-  @keyframes tick{
-    from{transform:translateX(0);}
-    to{transform:translateX(-50%);}
-  }
-
-  /* ============ NAV ============ */
-  header.nav{
-    position:sticky; top:0; z-index:50;
-    background:rgba(10,10,10,0.88);
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid var(--line);
-  }
-  .nav-row{
-    display:flex; align-items:center; justify-content:space-between;
-    padding:16px 28px;
-    max-width:1180px; margin:0 auto;
-  }
-  .brand{
-    font-family:var(--display);
-    font-size:22px;
-    letter-spacing:0.02em;
-    display:flex; align-items:center; gap:10px;
-  }
-  .brand .dot{width:10px; height:10px; background:var(--red); border-radius:50%; box-shadow:0 0 12px var(--red);}
-  .navlinks{display:flex; gap:28px; font-family:var(--mono); font-size:12px; text-transform:uppercase; letter-spacing:.08em;}
-  .navlinks a{opacity:.75; transition:opacity .2s, color .2s;}
-  .navlinks a:hover{opacity:1; color:var(--lime);}
-  .nav-cta{
-    font-family:var(--mono); font-size:12px; text-transform:uppercase; letter-spacing:.06em;
-    background:var(--lime); color:var(--ink); padding:9px 16px; border-radius:3px; font-weight:700;
-    white-space:nowrap;
-  }
-  @media (max-width:760px){ .navlinks{display:none;} }
-
-  /* ============ HERO ============ */
-  .hero{
-    position:relative;
-    padding:88px 0 60px;
-    background:
-      radial-gradient(ellipse 900px 500px at 18% -10%, rgba(212,255,63,0.14), transparent 60%),
-      radial-gradient(ellipse 700px 500px at 100% 10%, rgba(255,75,62,0.12), transparent 55%),
-      var(--ink);
-    border-bottom:1px solid var(--line);
-    overflow:hidden;
-  }
-  .hero::before{
-    content:"";
-    position:absolute; inset:0;
-    background-image:
-      repeating-linear-gradient(0deg, rgba(255,255,255,0.025) 0px, rgba(255,255,255,0.025) 1px, transparent 1px, transparent 3px);
-    pointer-events:none;
-  }
-  .hero-grid{
-    position:relative;
-    display:grid;
-    grid-template-columns:1.15fr 0.85fr;
-    gap:48px;
-    align-items:center;
-  }
-  @media (max-width:900px){ .hero-grid{grid-template-columns:1fr;} }
-
-  .eyebrow{
-    font-family:var(--mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase;
-    color:var(--lime); display:flex; align-items:center; gap:10px; margin-bottom:18px;
-  }
-  .eyebrow::before{content:""; width:26px; height:2px; background:var(--lime);}
-
-  .h1{
-    font-family:var(--display);
-    font-weight:400;
-    font-size:clamp(52px, 9vw, 108px);
-    line-height:0.86;
-    letter-spacing:-0.01em;
-    text-transform:uppercase;
-    background:linear-gradient(180deg, var(--chrome-1) 0%, var(--chrome-2) 45%, var(--chrome-3) 60%, var(--chrome-1) 100%);
-    -webkit-background-clip:text; background-clip:text; color:transparent;
-    filter:drop-shadow(0 2px 0 rgba(0,0,0,0.6));
-  }
-  .h1 .accent{
-    -webkit-text-fill-color:var(--lime);
-    color:var(--lime);
-    background:none;
-  }
-
-  .subhead{
-    font-family:var(--body); font-weight:600; font-size:19px;
-    color:var(--paper); opacity:.86; margin:22px 0 30px; max-width:44ch;
-  }
-  .subhead b{color:var(--lime); font-weight:800;}
-
-  .cta-row{display:flex; flex-wrap:wrap; gap:14px; margin-bottom:30px;}
-  .btn{
-    font-family:var(--mono); font-weight:700; font-size:13px; letter-spacing:.06em; text-transform:uppercase;
-    padding:16px 26px; border-radius:4px; display:inline-flex; align-items:center; gap:10px;
-    border:2px solid transparent; transition:transform .15s ease, box-shadow .15s ease;
-  }
-  .btn-primary{
-    background:var(--lime); color:var(--ink);
-    box-shadow:0 0 0 0 rgba(212,255,63,0.6);
-    animation:pulse 2.6s ease-in-out infinite;
-  }
+  body{background:var(--ink);color:var(--paper);font-family:var(--body);overflow-x:hidden;line-height:1.5;}
+  ::selection{background:var(--lime);color:var(--ink);}
+  a{color:inherit;text-decoration:none;}
+  img,svg{display:block;max-width:100%;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 28px;}
+  :focus-visible{outline:3px solid var(--lime);outline-offset:3px;}
+  .ticker{background:var(--lime);color:var(--ink);font-family:var(--mono);font-weight:700;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;border-bottom:3px solid var(--ink);overflow:hidden;white-space:nowrap;position:relative;}
+  .ticker-track{display:inline-flex;animation:tick 32s linear infinite;padding:10px 0;}
+  .ticker-track span{padding:0 22px;display:inline-flex;align-items:center;gap:10px;}
+  .ticker-track span::after{content:"◆";color:var(--ink);opacity:.55;font-size:10px;}
+  @keyframes tick{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(10,10,10,0.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .nav-row{display:flex;align-items:center;justify-content:space-between;padding:16px 28px;max-width:1180px;margin:0 auto;}
+  .brand{font-family:var(--display);font-size:22px;letter-spacing:0.02em;display:flex;align-items:center;gap:10px;}
+  .brand .dot{width:10px;height:10px;background:var(--red);border-radius:50%;box-shadow:0 0 12px var(--red);}
+  .navlinks{display:flex;gap:28px;font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.08em;}
+  .navlinks a{opacity:.75;transition:opacity .2s,color .2s;}
+  .navlinks a:hover{opacity:1;color:var(--lime);}
+  .nav-cta{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.06em;background:var(--lime);color:var(--ink);padding:9px 16px;border-radius:3px;font-weight:700;white-space:nowrap;}
+  @media (max-width:760px){.navlinks{display:none;}}
+  .hero{position:relative;padding:88px 0 60px;background:radial-gradient(ellipse 900px 500px at 18% -10%,rgba(212,255,63,0.14),transparent 60%),radial-gradient(ellipse 700px 500px at 100% 10%,rgba(255,75,62,0.12),transparent 55%),var(--ink);border-bottom:1px solid var(--line);overflow:hidden;}
+  .hero::before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,rgba(255,255,255,0.025) 0px,rgba(255,255,255,0.025) 1px,transparent 1px,transparent 3px);pointer-events:none;}
+  .hero-grid{position:relative;display:grid;grid-template-columns:1.15fr 0.85fr;gap:48px;align-items:center;}
+  @media (max-width:900px){.hero-grid{grid-template-columns:1fr;}}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--lime);display:flex;align-items:center;gap:10px;margin-bottom:18px;}
+  .eyebrow::before{content:"";width:26px;height:2px;background:var(--lime);}
+  .h1{font-family:var(--display);font-weight:400;font-size:clamp(52px,9vw,108px);line-height:0.86;letter-spacing:-0.01em;text-transform:uppercase;background:linear-gradient(180deg,var(--chrome-1) 0%,var(--chrome-2) 45%,var(--chrome-3) 60%,var(--chrome-1) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 2px 0 rgba(0,0,0,0.6));}
+  .h1 .accent{-webkit-text-fill-color:var(--lime);color:var(--lime);background:none;}
+  .subhead{font-family:var(--body);font-weight:600;font-size:19px;color:var(--paper);opacity:.86;margin:22px 0 30px;max-width:44ch;}
+  .subhead b{color:var(--lime);font-weight:800;}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:30px;}
+  .btn{font-family:var(--mono);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:16px 26px;border-radius:4px;display:inline-flex;align-items:center;gap:10px;border:2px solid transparent;transition:transform .15s ease,box-shadow .15s ease;}
+  .btn-primary{background:var(--lime);color:var(--ink);box-shadow:0 0 0 0 rgba(212,255,63,0.6);animation:pulse 2.6s ease-in-out infinite;}
   .btn-primary:hover{transform:translateY(-2px);}
-  @keyframes pulse{
-    0%,100%{box-shadow:0 0 0 0 rgba(212,255,63,0.45);}
-    50%{box-shadow:0 0 0 10px rgba(212,255,63,0);}
-  }
-  .btn-ghost{
-    background:transparent; color:var(--paper); border-color:var(--line);
-  }
-  .btn-ghost:hover{border-color:var(--lime); color:var(--lime);}
-  @media (prefers-reduced-motion: reduce){
-    .btn-primary{animation:none;}
-    .ticker-track{animation:none;}
-    html{scroll-behavior:auto;}
-  }
-
-  .microtrust{
-    font-family:var(--mono); font-size:11.5px; color:var(--chrome-2); letter-spacing:.04em;
-    display:flex; gap:18px; flex-wrap:wrap;
-  }
-  .microtrust span{display:flex; align-items:center; gap:6px;}
-  .microtrust span::before{content:"✓"; color:var(--lime); font-weight:700;}
-
-  /* ============ LABEL / BOTTLE ============ */
-  .bottle{
-    position:relative;
-    background:var(--paper);
-    color:var(--ink);
-    border-radius:10px;
-    padding:26px 26px 22px;
-    box-shadow:0 30px 60px -20px rgba(0,0,0,0.7), 0 0 0 1px rgba(0,0,0,0.4);
-    transform:rotate(1.2deg);
-  }
-  .bottle::after{
-    content:"";
-    position:absolute; top:14px; bottom:14px; left:-9px;
-    width:9px; background:var(--paper-2); border-radius:4px 0 0 4px;
-    box-shadow:inset -2px 0 4px rgba(0,0,0,0.15);
-  }
-  .burst{
-    position:absolute; top:-22px; right:-16px;
-    width:104px; height:104px;
-    background:var(--red);
-    border-radius:50%;
-    display:flex; align-items:center; justify-content:center; text-align:center;
-    transform:rotate(-12deg);
-    box-shadow:0 10px 24px rgba(255,75,62,0.4), 0 0 0 6px var(--ink);
-  }
-  .burst-inner{font-family:var(--display); color:#fff; font-size:15px; line-height:1.05; text-transform:uppercase;}
-  .burst-inner .big{display:block; font-size:26px;}
-
-  .label-brand{font-family:var(--mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--chrome-3); font-weight:700;}
-  .label-title{font-family:var(--display); font-size:30px; text-transform:uppercase; letter-spacing:0.01em; margin:2px 0 2px;}
-  .label-sub{font-family:var(--mono); font-size:11px; color:var(--red); font-weight:700; text-transform:uppercase; margin-bottom:14px;}
-
-  .factbox{border:3px solid var(--ink); border-radius:4px; overflow:hidden;}
-  .factbox-head{background:var(--ink); color:var(--paper); font-family:var(--display); font-size:22px; text-transform:uppercase; padding:8px 12px; letter-spacing:0.01em;}
-  .factbox-sub{font-family:var(--mono); font-size:10.5px; padding:6px 12px; border-bottom:8px solid var(--ink); background:var(--paper);}
-  .factrow{
-    display:flex; justify-content:space-between; align-items:baseline;
-    padding:6px 12px; border-bottom:1px solid var(--ink); font-family:var(--mono); font-size:12px;
-  }
-  .factrow.total{border-bottom:3px solid var(--ink); font-weight:700; background:var(--paper-2);}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(212,255,63,0.45);}50%{box-shadow:0 0 0 10px rgba(212,255,63,0);}}
+  .btn-ghost{background:transparent;color:var(--paper);border-color:var(--line);}
+  .btn-ghost:hover{border-color:var(--lime);color:var(--lime);}
+  @media (prefers-reduced-motion:reduce){.btn-primary{animation:none;}.ticker-track{animation:none;}html{scroll-behavior:auto;}}
+  .microtrust{font-family:var(--mono);font-size:11.5px;color:var(--chrome-2);letter-spacing:.04em;display:flex;gap:18px;flex-wrap:wrap;}
+  .microtrust span{display:flex;align-items:center;gap:6px;}
+  .microtrust span::before{content:"✓";color:var(--lime);font-weight:700;}
+  .bottle{position:relative;background:var(--paper);color:var(--ink);border-radius:10px;padding:26px 26px 22px;box-shadow:0 30px 60px -20px rgba(0,0,0,0.7),0 0 0 1px rgba(0,0,0,0.4);transform:rotate(1.2deg);}
+  .bottle::after{content:"";position:absolute;top:14px;bottom:14px;left:-9px;width:9px;background:var(--paper-2);border-radius:4px 0 0 4px;box-shadow:inset -2px 0 4px rgba(0,0,0,0.15);}
+  .burst{position:absolute;top:-22px;right:-16px;width:104px;height:104px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;text-align:center;transform:rotate(-12deg);box-shadow:0 10px 24px rgba(255,75,62,0.4),0 0 0 6px var(--ink);}
+  .burst-inner{font-family:var(--display);color:#fff;font-size:15px;line-height:1.05;text-transform:uppercase;}
+  .burst-inner .big{display:block;font-size:26px;}
+  .label-brand{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--chrome-3);font-weight:700;}
+  .label-title{font-family:var(--display);font-size:30px;text-transform:uppercase;letter-spacing:0.01em;margin:2px 0 2px;}
+  .label-sub{font-family:var(--mono);font-size:11px;color:var(--red);font-weight:700;text-transform:uppercase;margin-bottom:14px;}
+  .factbox{border:3px solid var(--ink);border-radius:4px;overflow:hidden;}
+  .factbox-head{background:var(--ink);color:var(--paper);font-family:var(--display);font-size:22px;text-transform:uppercase;padding:8px 12px;letter-spacing:0.01em;}
+  .factbox-sub{font-family:var(--mono);font-size:10.5px;padding:6px 12px;border-bottom:8px solid var(--ink);background:var(--paper);}
+  .factrow{display:flex;justify-content:space-between;align-items:baseline;padding:6px 12px;border-bottom:1px solid var(--ink);font-family:var(--mono);font-size:12px;}
+  .factrow.total{border-bottom:3px solid var(--ink);font-weight:700;background:var(--paper-2);}
   .factrow .dv{font-weight:700;}
-  .factfoot{padding:8px 12px; font-family:var(--mono); font-size:9.5px; color:var(--chrome-3); line-height:1.4;}
-
-  /* ============ SECTION SHELL ============ */
-  section{padding:80px 0; border-bottom:1px solid var(--line);}
-  .kicker{
-    font-family:var(--mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--lime);
-    display:flex; align-items:center; gap:10px; margin-bottom:14px;
-  }
-  .kicker::before{content:""; width:26px; height:2px; background:var(--lime);}
-  .h2{
-    font-family:var(--display); font-size:clamp(32px,4.6vw,54px); text-transform:uppercase; line-height:0.98;
-    letter-spacing:0; margin-bottom:16px; max-width:16ch;
-  }
-  .lede{font-size:17px; color:var(--chrome-2); max-width:62ch; margin-bottom:44px;}
-
-  /* reveal */
-  .reveal{opacity:0; transform:translateY(22px); transition:opacity .6s ease, transform .6s ease;}
-  .reveal.in{opacity:1; transform:translateY(0);}
-
-  /* ============ TRUST STRIP ============ */
-  .trust{background:var(--ink-2); padding:26px 0; border-bottom:1px solid var(--line);}
-  .trust .wrap{display:flex; align-items:center; justify-content:center; gap:44px; flex-wrap:wrap;
-    font-family:var(--mono); font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--chrome-2);}
-  .trust strong{color:var(--paper); font-family:var(--display); font-weight:400; letter-spacing:0; font-size:15px;}
-
-  /* ============ TRANSFORMATION ============ */
-  .split{display:grid; grid-template-columns:1fr 1fr; gap:0; border:1px solid var(--line); border-radius:10px; overflow:hidden;}
+  .factfoot{padding:8px 12px;font-family:var(--mono);font-size:9.5px;color:var(--chrome-3);line-height:1.4;}
+  section{padding:80px 0;border-bottom:1px solid var(--line);}
+  .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--lime);display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+  .kicker::before{content:"";width:26px;height:2px;background:var(--lime);}
+  .h2{font-family:var(--display);font-size:clamp(32px,4.6vw,54px);text-transform:uppercase;line-height:0.98;letter-spacing:0;margin-bottom:16px;max-width:16ch;}
+  .lede{font-size:17px;color:var(--chrome-2);max-width:62ch;margin-bottom:44px;}
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease;}
+  .reveal.in{opacity:1;transform:translateY(0);}
+  .trust{background:var(--ink-2);padding:26px 0;border-bottom:1px solid var(--line);}
+  .trust .wrap{display:flex;align-items:center;justify-content:center;gap:44px;flex-wrap:wrap;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--chrome-2);}
+  .trust strong{color:var(--paper);font-family:var(--display);font-weight:400;letter-spacing:0;font-size:15px;}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;}
   @media (max-width:800px){.split{grid-template-columns:1fr;}}
-  .panel{padding:34px 30px; position:relative;}
-  .panel-before{background:#161414; border-right:1px solid var(--line);}
-  @media (max-width:800px){.panel-before{border-right:none; border-bottom:1px solid var(--line);}}
-  .panel-after{background:linear-gradient(160deg, rgba(212,255,63,0.08), transparent 60%), var(--ink-2);}
-  .panel-tag{
-    font-family:var(--mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; font-weight:700;
-    display:inline-block; padding:5px 10px; border-radius:3px; margin-bottom:16px;
-  }
-  .panel-before .panel-tag{background:rgba(255,75,62,0.15); color:var(--red); border:1px solid rgba(255,75,62,0.4);}
-  .panel-after .panel-tag{background:rgba(212,255,63,0.15); color:var(--lime); border:1px solid rgba(212,255,63,0.4);}
-  .panel h3{font-family:var(--display); font-size:24px; text-transform:uppercase; margin-bottom:14px; font-weight:400;}
+  .panel{padding:34px 30px;position:relative;}
+  .panel-before{background:#161414;border-right:1px solid var(--line);}
+  @media (max-width:800px){.panel-before{border-right:none;border-bottom:1px solid var(--line);}}
+  .panel-after{background:linear-gradient(160deg,rgba(212,255,63,0.08),transparent 60%),var(--ink-2);}
+  .panel-tag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;display:inline-block;padding:5px 10px;border-radius:3px;margin-bottom:16px;}
+  .panel-before .panel-tag{background:rgba(255,75,62,0.15);color:var(--red);border:1px solid rgba(255,75,62,0.4);}
+  .panel-after .panel-tag{background:rgba(212,255,63,0.15);color:var(--lime);border:1px solid rgba(212,255,63,0.4);}
+  .panel h3{font-family:var(--display);font-size:24px;text-transform:uppercase;margin-bottom:14px;font-weight:400;}
   .panel ul{list-style:none;}
-  .panel li{padding:9px 0; border-top:1px dashed rgba(255,255,255,0.08); font-size:14.5px; color:var(--chrome-2); display:flex; gap:10px;}
-  .panel-before li::before{content:"✕"; color:var(--red); font-weight:700; flex-shrink:0;}
-  .panel-after li::before{content:"✓"; color:var(--lime); font-weight:700; flex-shrink:0;}
+  .panel li{padding:9px 0;border-top:1px dashed rgba(255,255,255,0.08);font-size:14.5px;color:var(--chrome-2);display:flex;gap:10px;}
+  .panel-before li::before{content:"✕";color:var(--red);font-weight:700;flex-shrink:0;}
+  .panel-after li::before{content:"✓";color:var(--lime);font-weight:700;flex-shrink:0;}
   .panel li:first-child{border-top:none;}
-
-  /* ============ SUPPLEMENT FACTS (signature, full width) ============ */
-  .facts-wrap{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start;}
+  .facts-wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
   @media (max-width:900px){.facts-wrap{grid-template-columns:1fr;}}
-  .fact-panel{
-    background:var(--paper); color:var(--ink); border:4px solid var(--ink); border-radius:6px; overflow:hidden;
-  }
-  .fp-head{padding:14px 18px 10px; border-bottom:10px solid var(--ink);}
-  .fp-head .t1{font-family:var(--display); font-size:36px; text-transform:uppercase; line-height:1;}
-  .fp-head .t2{font-family:var(--mono); font-size:12px; margin-top:6px;}
-  .fp-servings{padding:8px 18px; font-family:var(--mono); font-size:11.5px; border-bottom:1px solid var(--ink);}
-  .fp-row{
-    display:grid; grid-template-columns:1fr auto auto; gap:10px; align-items:baseline;
-    padding:9px 18px; border-bottom:1px solid var(--ink); font-family:var(--mono); font-size:13px;
-  }
-  .fp-row .amt{color:var(--chrome-3); font-size:12px; white-space:nowrap;}
-  .fp-row .dv{font-weight:700; text-align:right; white-space:nowrap;}
-  .fp-row.total{background:var(--paper-2); border-bottom:4px solid var(--ink); border-top:4px solid var(--ink); font-weight:700; font-size:15px;}
-  .fp-row.total .dv{font-size:17px; color:var(--red);}
-  .fp-bar{height:6px; background:#dcd4bd; border-radius:3px; overflow:hidden; margin-top:4px; grid-column:1 / -1;}
-  .fp-bar i{display:block; height:100%; background:var(--lime); border-radius:3px;}
-  .fp-foot{padding:12px 18px; font-family:var(--mono); font-size:10px; color:var(--chrome-3); line-height:1.5;}
-
-  .facts-copy .stat-big{font-family:var(--display); font-size:96px; line-height:1; color:var(--lime); text-shadow:0 0 40px rgba(212,255,63,0.35);}
-  .facts-copy .stat-label{font-family:var(--mono); font-size:13px; letter-spacing:.08em; text-transform:uppercase; color:var(--chrome-2); margin-top:6px; margin-bottom:26px;}
-  .facts-copy p{color:var(--chrome-2); font-size:15.5px; max-width:48ch; margin-bottom:16px;}
-  .facts-copy .verdict-chip{
-    display:inline-flex; align-items:center; gap:8px; font-family:var(--mono); font-weight:700; font-size:13px;
-    background:rgba(212,255,63,0.12); color:var(--lime); border:1px solid rgba(212,255,63,0.4);
-    padding:8px 14px; border-radius:4px; letter-spacing:.04em; margin-top:6px;
-  }
-  .verdict-chip::before{content:"●"; font-size:9px;}
-
-  /* ============ INGREDIENTS ============ */
-  .ing-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px;}
+  .fact-panel{background:var(--paper);color:var(--ink);border:4px solid var(--ink);border-radius:6px;overflow:hidden;}
+  .fp-head{padding:14px 18px 10px;border-bottom:10px solid var(--ink);}
+  .fp-head .t1{font-family:var(--display);font-size:36px;text-transform:uppercase;line-height:1;}
+  .fp-head .t2{font-family:var(--mono);font-size:12px;margin-top:6px;}
+  .fp-servings{padding:8px 18px;font-family:var(--mono);font-size:11.5px;border-bottom:1px solid var(--ink);}
+  .fp-row{display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:baseline;padding:9px 18px;border-bottom:1px solid var(--ink);font-family:var(--mono);font-size:13px;}
+  .fp-row .amt{color:var(--chrome-3);font-size:12px;white-space:nowrap;}
+  .fp-row .dv{font-weight:700;text-align:right;white-space:nowrap;}
+  .fp-row.total{background:var(--paper-2);border-bottom:4px solid var(--ink);border-top:4px solid var(--ink);font-weight:700;font-size:15px;}
+  .fp-row.total .dv{font-size:17px;color:var(--red);}
+  .fp-bar{height:6px;background:#dcd4bd;border-radius:3px;overflow:hidden;margin-top:4px;grid-column:1 / -1;}
+  .fp-bar i{display:block;height:100%;background:var(--lime);border-radius:3px;}
+  .fp-foot{padding:12px 18px;font-family:var(--mono);font-size:10px;color:var(--chrome-3);line-height:1.5;}
+  .facts-copy .stat-big{font-family:var(--display);font-size:96px;line-height:1;color:var(--lime);text-shadow:0 0 40px rgba(212,255,63,0.35);}
+  .facts-copy .stat-label{font-family:var(--mono);font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--chrome-2);margin-top:6px;margin-bottom:26px;}
+  .facts-copy p{color:var(--chrome-2);font-size:15.5px;max-width:48ch;margin-bottom:16px;}
+  .facts-copy .verdict-chip{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-weight:700;font-size:13px;background:rgba(212,255,63,0.12);color:var(--lime);border:1px solid rgba(212,255,63,0.4);padding:8px 14px;border-radius:4px;letter-spacing:.04em;margin-top:6px;}
+  .verdict-chip::before{content:"●";font-size:9px;}
+  .ing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
   @media (max-width:900px){.ing-grid{grid-template-columns:repeat(2,1fr);}}
   @media (max-width:600px){.ing-grid{grid-template-columns:1fr;}}
-  .ing-card{
-    background:var(--ink-2); border:1px solid var(--line); border-radius:8px; padding:22px;
-    transition:border-color .2s, transform .2s;
-  }
-  .ing-card:hover{border-color:var(--lime); transform:translateY(-3px);}
-  .ing-dose{font-family:var(--mono); font-size:11px; color:var(--lime); text-transform:uppercase; letter-spacing:.08em; margin-bottom:10px;}
-  .ing-card h4{font-family:var(--display); font-size:19px; text-transform:uppercase; font-weight:400; margin-bottom:8px; line-height:1.1;}
-  .ing-card p{font-size:13.5px; color:var(--chrome-2); line-height:1.55;}
-
-  /* ============ TESTIMONIALS ============ */
-  .rev-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+  .ing-card{background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:22px;transition:border-color .2s,transform .2s;}
+  .ing-card:hover{border-color:var(--lime);transform:translateY(-3px);}
+  .ing-dose{font-family:var(--mono);font-size:11px;color:var(--lime);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;}
+  .ing-card h4{font-family:var(--display);font-size:19px;text-transform:uppercase;font-weight:400;margin-bottom:8px;line-height:1.1;}
+  .ing-card p{font-size:13.5px;color:var(--chrome-2);line-height:1.55;}
+  .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
   @media (max-width:900px){.rev-grid{grid-template-columns:1fr;}}
-  .rev-card{background:var(--ink-2); border:1px solid var(--line); border-radius:8px; padding:24px;}
-  .stars{color:var(--lime); letter-spacing:2px; margin-bottom:12px; font-size:15px;}
-  .rev-card p{font-size:14.5px; color:var(--paper); opacity:.92; margin-bottom:16px; line-height:1.6;}
-  .rev-who{font-family:var(--mono); font-size:11.5px; color:var(--chrome-2); text-transform:uppercase; letter-spacing:.06em;}
-
-  /* ============ FINAL CTA ============ */
-  .final{
-    text-align:center; padding:100px 0;
-    background:
-      radial-gradient(ellipse 800px 400px at 50% 0%, rgba(212,255,63,0.14), transparent 60%),
-      var(--ink);
-    border-bottom:none;
-  }
-  .final .h2{margin:0 auto 18px; max-width:20ch;}
-  .final .lede{margin-left:auto; margin-right:auto; text-align:center;}
+  .rev-card{background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:24px;}
+  .rev-card .verdict{font-family:var(--mono);font-weight:700;font-size:12px;letter-spacing:.08em;margin-bottom:12px;}
+  .rev-card .v-hold{color:#ffb347;}.rev-card .v-noship{color:var(--red);}.rev-card .v-ship{color:var(--lime);}
+  .rev-card p{font-size:14.5px;color:var(--paper);opacity:.92;margin-bottom:16px;line-height:1.6;}
+  .rev-who{font-family:var(--mono);font-size:11.5px;color:var(--chrome-2);text-transform:uppercase;letter-spacing:.06em;}
+  .final{text-align:center;padding:100px 0;background:radial-gradient(ellipse 800px 400px at 50% 0%,rgba(212,255,63,0.14),transparent 60%),var(--ink);border-bottom:none;}
+  .final .h2{margin:0 auto 18px;max-width:20ch;}
+  .final .lede{margin-left:auto;margin-right:auto;text-align:center;}
   .final .cta-row{justify-content:center;}
-
-  /* ============ FOOTER ============ */
-  footer{padding:44px 0 60px; background:var(--ink);}
-  .foot-grid{display:flex; justify-content:space-between; gap:24px; flex-wrap:wrap; margin-bottom:28px;}
-  .foot-brand{font-family:var(--display); font-size:20px; text-transform:uppercase;}
-  .foot-links{display:flex; gap:22px; font-family:var(--mono); font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--chrome-2);}
+  footer{padding:44px 0 60px;background:var(--ink);}
+  .foot-grid{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:28px;}
+  .foot-brand{font-family:var(--display);font-size:20px;text-transform:uppercase;}
+  .foot-links{display:flex;gap:22px;font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--chrome-2);}
   .foot-links a:hover{color:var(--lime);}
-  .disclaimer{
-    font-family:var(--mono); font-size:10.5px; color:var(--chrome-3); line-height:1.7; border-top:1px solid var(--line); padding-top:22px;
-  }
+  .disclaimer{font-family:var(--mono);font-size:10.5px;color:var(--chrome-3);line-height:1.7;border-top:1px solid var(--line);padding-top:22px;}
 </style>
 </head>
 <body>
 
-  <!-- TICKER -->
   <div class="ticker" aria-hidden="true">
     <div class="ticker-track">
-      <span>96 / 100 COMPOSITE SCORE</span>
+      <span>ANSWER KEY SELF-SCORED 96 / 100</span>
       <span>ZERO FILLER PROMPTS</span>
-      <span>ATTRIBUTION INTEGRITY GATE — VERDICT: SHIPS</span>
+      <span>ATTRIBUTION INTEGRITY GATE</span>
       <span>8 DIMENSIONS, FULLY LOADED</span>
-      <span>NOW WITH GATE 4 FAILURE-MODE COMPLEX</span>
-      <span>NDA-SENSITIVE FORMULA</span>
-      <span>96 / 100 COMPOSITE SCORE</span>
+      <span>NOW WITH THE AI COUNCIL DECISION LAYER</span>
+      <span>ALL DATA SYNTHETIC</span>
+      <span>ANSWER KEY SELF-SCORED 96 / 100</span>
       <span>ZERO FILLER PROMPTS</span>
-      <span>ATTRIBUTION INTEGRITY GATE — VERDICT: SHIPS</span>
+      <span>ATTRIBUTION INTEGRITY GATE</span>
       <span>8 DIMENSIONS, FULLY LOADED</span>
-      <span>NOW WITH GATE 4 FAILURE-MODE COMPLEX</span>
-      <span>NDA-SENSITIVE FORMULA</span>
+      <span>NOW WITH THE AI COUNCIL DECISION LAYER</span>
+      <span>ALL DATA SYNTHETIC</span>
     </div>
   </div>
 
-  <!-- NAV -->
   <header class="nav">
     <div class="nav-row">
-      <div class="brand"><span class="dot"></span>CUTLER LAYER</div>
+      <div class="brand"><span class="dot"></span>ATTRIBUTION INTEGRITY GATE</div>
       <nav class="navlinks">
         <a href="#facts">Supplement Facts</a>
         <a href="#ingredients">Ingredients</a>
-        <a href="#reviews">Results</a>
-        <a href="#stack">The Stack</a>
+        <a href="#layer">The Layer</a>
+        <a href="#stack">Distribution</a>
       </nav>
       <a class="nav-cta" href="https://github.com/emcdo411/cutler-draftkings-intern-use-case" target="_blank" rel="noopener">View Repo →</a>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero" style="border-bottom:1px solid var(--line); padding-top:88px;">
+  <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <div class="eyebrow">Havas Edge · Director-Level Stress-Test</div>
+        <div class="eyebrow">Performance Media · Director-Level Stress-Test</div>
         <h1 class="h1">MAXIMUM<br>ATTRIBUTION<br><span class="accent">INTEGRITY.</span></h1>
-        <p class="subhead">The master prompt that scored <b>96 out of 100</b> against every gate DraftKings-scale media-mix decisions have to clear before they hit a client dashboard. No filler. No hand-waving. No "leadership reviews it."</p>
+        <p class="subhead">The master prompt that scored <b>96 out of 100</b> against every gate an AI-influenced media-mix decision has to clear before it hits a client dashboard. No filler. No hand-waving. No "leadership reviews it."</p>
         <div class="cta-row">
           <a class="btn btn-primary" href="https://github.com/emcdo411/cutler-draftkings-intern-use-case" target="_blank" rel="noopener">Get The Repo →</a>
-          <a class="btn btn-ghost" href="#facts">See The Scorecard</a>
+          <a class="btn btn-ghost" href="#layer">See The Decision Layer</a>
         </div>
         <div class="microtrust">
           <span>8/8 rubric dimensions exercised</span>
           <span>Disclosed evaluation, always</span>
+          <span>Synthetic data only</span>
           <span>DACR License v2.6</span>
         </div>
       </div>
-
       <div>
         <div class="bottle">
           <div class="burst"><div class="burst-inner"><span class="big">96</span>/100<br>SHIPS</div></div>
-          <div class="label-brand">Epoch Frameworks LLC — Havas Edge Series</div>
+          <div class="label-brand">Epoch Frameworks LLC</div>
           <div class="label-title">Attribution Integrity Gate</div>
           <div class="label-sub">Director-Level Stress-Test Formula</div>
           <div class="factbox">
             <div class="factbox-head">Verdict Facts</div>
-            <div class="factbox-sub">Serving Size: 1 Master Prompt</div>
+            <div class="factbox-sub">Serving Size: 1 Master Prompt (the answer key, scored against itself)</div>
             <div class="factrow"><span>Verdict</span><span class="dv">SHIPS</span></div>
             <div class="factrow"><span>Composite Score</span><span class="dv">96 / 100</span></div>
             <div class="factrow"><span>Client Trust Risk</span><span class="dv">None Material</span></div>
             <div class="factrow total"><span>Cleared For</span><span class="dv">Client Dashboard</span></div>
-            <div class="factfoot">*Percent values based on an 8-dimension, 100-point Attribution Integrity Gate rubric. Not evaluated by the FDA — evaluated by the Cutler Layer.</div>
+            <div class="factfoot">*Percent values based on an 8-dimension, 100-point Attribution Integrity Gate rubric. Not evaluated by the FDA. Evaluated by the gate.</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TRUST STRIP -->
   <div class="trust">
     <div class="wrap">
-      <span><strong>Havas Edge</strong> AI Council</span>
-      <span><strong>RAMP</strong> Incrementality</span>
-      <span><strong>VantEdge Point</strong> Platform</span>
+      <span><strong>AI Council</strong> Governance</span>
+      <span><strong>Holdout</strong> Incrementality</span>
+      <span><strong>Direct-Response</strong> Data Platform</span>
       <span><strong>Gaming Vertical</strong> Compliance</span>
-      <span><strong>Cutler Layer</strong> v1.3</span>
+      <span><strong>Decision Layer</strong> v1</span>
     </div>
   </div>
 
-  <!-- TRANSFORMATION -->
   <section>
     <div class="wrap reveal">
       <div class="kicker">Before / After</div>
       <h2 class="h2">Weak Prompt In. Verdict-Grade Prompt Out.</h2>
-      <p class="lede">This is what separates a merely competent submission from the one Greg Cutler actually ships to the AI Council.</p>
+      <p class="lede">This is what separates a merely competent submission from one an AI Council can actually act on.</p>
       <div class="split">
         <div class="panel panel-before">
           <span class="panel-tag">Untrained Prompt</span>
@@ -461,36 +238,33 @@
           </ul>
         </div>
         <div class="panel panel-after">
-          <span class="panel-tag">Cutler Layer Formula</span>
+          <span class="panel-tag">Gate Formula</span>
           <h3>Operator-Level Prompt</h3>
           <ul>
-            <li>Gaming-vertical routing to named state RG ad-frequency caps</li>
+            <li>Gaming-vertical routing to named state responsible-advertising caps</li>
             <li>Stale feeds flagged by name and state, hold-worthy on their own</li>
-            <li>AI-vs-RAMP lift gap separated and quantified, paragraph-by-paragraph</li>
+            <li>AI-vs-holdout lift gap separated and quantified</li>
             <li>Named review owner and escalation path before dashboard exposure</li>
             <li>Mandatory Verdict / Why / Evidence / Open Risks / Next Gate block</li>
-            <li>Explicit "Assumptions" heading — nothing resolved silently</li>
+            <li>Explicit "Assumptions" heading. Nothing resolved silently</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SUPPLEMENT FACTS (signature) -->
   <section id="facts">
     <div class="wrap reveal">
       <div class="kicker">The Label</div>
       <h2 class="h2">Supplement Facts</h2>
-      <p class="lede">Every dimension the Attribution Integrity Gate doses out, at full potency, scored against the answer key itself.</p>
-
+      <p class="lede">Every dimension the Attribution Integrity Gate doses out, scored against the answer key itself before it graded anyone else.</p>
       <div class="facts-wrap">
         <div class="fact-panel">
           <div class="fp-head">
             <div class="t1">Scoring Facts</div>
             <div class="t2">8 Dimensions Per Master Prompt</div>
           </div>
-          <div class="fp-servings">Serving Size: 1 Master Prompt &nbsp;|&nbsp; Servings Per Exercise: 1 Per Intern</div>
-
+          <div class="fp-servings">Serving Size: 1 Master Prompt &nbsp;|&nbsp; Servings Per Exercise: 1 Per Participant</div>
           <div class="fp-row"><span>Business Framing</span><span class="amt">15 pts</span><span class="dv">100%</span><div class="fp-bar"><i style="width:100%"></i></div></div>
           <div class="fp-row"><span>Data Inventory &amp; Lineage</span><span class="amt">15 pts</span><span class="dv">100%</span><div class="fp-bar"><i style="width:100%"></i></div></div>
           <div class="fp-row"><span>Attribution / MMM Reasoning</span><span class="amt">15 pts</span><span class="dv">100%</span><div class="fp-bar"><i style="width:100%"></i></div></div>
@@ -500,89 +274,84 @@
           <div class="fp-row"><span>Executive Artifact Quality</span><span class="amt">6 pts</span><span class="dv">60%</span><div class="fp-bar"><i style="width:60%"></i></div></div>
           <div class="fp-row"><span>AI-Use Maturity</span><span class="amt">5 pts</span><span class="dv">100%</span><div class="fp-bar"><i style="width:100%"></i></div></div>
           <div class="fp-row total"><span>Composite Verdict Score</span><span class="amt">96 pts</span><span class="dv">96%</span></div>
-
-          <div class="fp-foot">†Executive Artifact Quality dosed at 60%: the mandatory verdict-block format was referenced in the source doc but the template didn't carry through to final export — flagged, not hidden. All other dimensions cleared full potency. Release-Ready Line: 85. Conditional-Ship Line: 70.</div>
+          <div class="fp-foot">†Executive Artifact Quality dosed at 60%: the mandatory verdict-block format was referenced in the source doc but the template did not carry through to final export. Flagged, not hidden. Release-Ready Line: 85. Conditional-Ship Line: 70. This is the answer key's own score. No participant scores are published.</div>
         </div>
-
         <div class="facts-copy">
           <div class="stat-big">96%</div>
           <div class="stat-label">Daily Value of Director-Level Judgment</div>
-          <p>The composite score clears the Release-Ready line at 85 with room to spare — no material control gap, no conditional caveats needed before this reasoning pattern reaches a client dashboard.</p>
-          <p>The one dimension that didn't max out is the one that matters most for honesty: a formatting gap the framework caught on itself, before it caught it on anyone else.</p>
+          <p>The composite clears the Release-Ready line at 85 with room to spare. No material control gap, no conditional caveats before this reasoning pattern reaches a client dashboard.</p>
+          <p>The one dimension that did not max out is the one that matters most for honesty: a formatting gap the framework caught on itself, before it caught it on anyone else.</p>
           <span class="verdict-chip">Attribution Integrity Gate Verdict: SHIPS</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- INGREDIENTS -->
   <section id="ingredients">
     <div class="wrap reveal">
       <div class="kicker">What's Actually In It</div>
       <h2 class="h2">Active Ingredients</h2>
-      <p class="lede">No proprietary blend nonsense. Every file in the stack, dosed and disclosed.</p>
+      <p class="lede">No proprietary blend nonsense. What is in the public repo, and what is deliberately not.</p>
       <div class="ing-grid">
         <div class="ing-card">
-          <div class="ing-dose">Core Dose</div>
+          <div class="ing-dose">Delivery System · Public</div>
+          <h4>Scenario Brief</h4>
+          <p>The one paragraph participants receive: 14-point shift, 71% confidence, six states, two stale feeds, 48-hour clock. A national sportsbook client, fictional.</p>
+        </div>
+        <div class="ing-card">
+          <div class="ing-dose">Active Compound · Public</div>
+          <h4>The Rubric</h4>
+          <p>Eight dimensions, one hundred points, thresholds at 85 and 70, and the mandatory verdict block format.</p>
+        </div>
+        <div class="ing-card">
+          <div class="ing-dose">Growth Complex · Public</div>
+          <h4>Decision Layer Sandbox</h4>
+          <p>A synthetic AI Council portfolio with 23 planted problems, an answer key, a gate key, and a run log. Score a run instead of eyeballing it.</p>
+        </div>
+        <div class="ing-card">
+          <div class="ing-dose">Core Dose · Private</div>
           <h4>Master Prompt Answer Key</h4>
-          <p>The seven-part reference prompt: lineage, attribution reasoning, compliance routing, failure-mode resolution, governance, verdict block, and a mandatory assumptions pass.</p>
+          <p>The seven-part reference prompt participants are scored against. Publishing it would defeat the exercise. Held off the shelf.</p>
         </div>
         <div class="ing-card">
-          <div class="ing-dose">Delivery System</div>
-          <h4>Use Case Brief</h4>
-          <p>The one-page scenario participants actually receive — 14-point shift, 71% confidence, six states, two stale feeds, 48-hour clock.</p>
+          <div class="ing-dose">Catalyst · Private</div>
+          <h4>Evaluator Skill Package</h4>
+          <p>The scoring logic and the report generator that turns a scored prompt into a verdict. Held off the shelf.</p>
         </div>
         <div class="ing-card">
-          <div class="ing-dose">Catalyst</div>
-          <h4>Cutler Layer Skill Package</h4>
-          <p>The evaluator itself: activation rules, disclosed-only scoring, NDA boundaries, and the report generator that turns a scored prompt into a client-ready verdict.</p>
-        </div>
-        <div class="ing-card">
-          <div class="ing-dose">Absorption Aid</div>
-          <h4>Public Records Reference</h4>
-          <p>Verifiable, re-checked-every-60-days facts on Havas Edge, VantEdge, and RAMP — no stale claims allowed into a written artifact.</p>
-        </div>
-        <div class="ing-card">
-          <div class="ing-dose">Recovery Complex</div>
-          <h4>Relationship History</h4>
-          <p>LHI scorecard and timeline, read for context, edited only on explicit request — never silently persisted.</p>
-        </div>
-        <div class="ing-card">
-          <div class="ing-dose">Proof of Potency</div>
-          <h4>Scored Output Sample</h4>
-          <p>The rendered scorecard showing the answer key clearing its own bar — 96/100, SHIPS — before it's used to grade anyone else.</p>
+          <div class="ing-dose">Proof of Potency · Private</div>
+          <h4>Scored Submissions</h4>
+          <p>Participant work product and scorecards. Not published, not quoted, not starred.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section id="reviews">
+  <section id="layer">
     <div class="wrap reveal">
-      <div class="kicker">Results</div>
-      <h2 class="h2">Real Submissions. Real Verdicts.</h2>
-      <p class="lede">The rubric doesn't grade on effort. Here's what it does to a prompt.</p>
+      <div class="kicker">Chapter Two</div>
+      <h2 class="h2">One Gated Decision. Then The Whole Backlog.</h2>
+      <p class="lede">The exercise gates one number. A Council carries dozens of items, nearly all marked priority one. The AI Council Decision Layer scores every item on five signals, caps what reaches the executive at three decisions, five risks, and five watch items, and routes any AI-touched client output through the gate. The exercise scenario sits in the sandbox as one backlog row. It scores 5, lands as Decision 1, and the gate returns HOLD.</p>
       <div class="rev-grid">
         <div class="rev-card">
-          <div class="stars">★★★★★</div>
-          <p>"Walked in with a narrative answer. Walked out with a verdict block. My Executive Artifact Quality score has never looked better."</p>
-          <div class="rev-who">Intern Cohort — Submission #07</div>
+          <div class="verdict v-hold">GATE VERDICT: HOLD</div>
+          <p>Sportsbook reallocation. Model disagrees with holdout at 71%, two feeds stale, no named exception owner, suppression coverage unverified in two states. Way back: refresh, quantify, name, confirm, re-gate.</p>
+          <div class="rev-who">Sandbox output AO-01 · fictional client</div>
         </div>
         <div class="rev-card">
-          <div class="stars">★★★★★</div>
-          <p>"I flagged the stale feeds by name and state and the whole Data Lineage column just lit up green. Didn't know a rubric could feel like a PR."</p>
-          <div class="rev-who">Intern Cohort — Submission #12</div>
+          <div class="verdict v-noship">GATE VERDICT: NO-SHIP</div>
+          <p>Insurance dashboard narrative promising a guaranteed 18% lift, drafted by the model, with AI text unlabeled and no substantiation. Way back: remove the guarantee, label the sentences, clear the disclosure standard.</p>
+          <div class="rev-who">Sandbox output AO-02 · fictional client</div>
         </div>
         <div class="rev-card">
-          <div class="stars">★★★★☆</div>
-          <p>"Named a real review owner instead of 'leadership reviews it' and picked up the full 10 on Governance. Docked on the verdict format — still recovering."</p>
-          <div class="rev-who">Intern Cohort — Submission #03</div>
+          <div class="verdict v-ship">GATE VERDICT: SHIP</div>
+          <p>Weekly attribution report with AI and human sections labeled, lineage documented, cycle time measured at 40% less analyst prep, sign-off logged. All five gates clear.</p>
+          <div class="rev-who">Sandbox output AO-05 · fictional client</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- STACK / DISTRIBUTION -->
   <section id="stack">
     <div class="wrap reveal">
       <div class="kicker">Directions For Use</div>
@@ -590,21 +359,22 @@
       <p class="lede">Take exactly as directed. This formula is disclosed, never hidden.</p>
       <div class="split">
         <div class="panel panel-before">
-          <span class="panel-tag">Internal Only</span>
+          <span class="panel-tag">Held Privately</span>
           <h3>Kept Off The Shelf</h3>
           <ul>
-            <li>Master prompt answer key (.md / .pdf)</li>
-            <li>Design rationale inside the use case brief</li>
-            <li>Cutler Layer skill package — NDA-sensitive</li>
-            <li>Scored output artifacts and scorecards</li>
+            <li>Master prompt answer key</li>
+            <li>Design rationale behind the scenario</li>
+            <li>Evaluator skill package</li>
+            <li>Scored submissions and scorecards</li>
+            <li>Any engagement-specific reference material</li>
           </ul>
         </div>
         <div class="panel panel-after">
           <span class="panel-tag">Participant Facing</span>
           <h3>What Actually Ships</h3>
           <ul>
-            <li>One scenario paragraph — the brief, nothing else</li>
-            <li>A disclosure line: your prompt will be scored, a verdict goes to Greg</li>
+            <li>One scenario paragraph. The brief, nothing else</li>
+            <li>A disclosure line: your prompt will be scored, a verdict goes to the Council chair</li>
             <li>No rubric weighting, no evaluator identity, no answer key</li>
             <li>A fair shot at an operator-level score, judgment only</li>
           </ul>
@@ -613,51 +383,41 @@
     </div>
   </section>
 
-  <!-- FINAL CTA -->
   <section class="final">
     <div class="wrap reveal">
-      <div class="kicker" style="justify-content:center;"><span style="display:none"></span>Ready When You Are</div>
+      <div class="kicker" style="justify-content:center;">Ready When You Are</div>
       <h2 class="h2">Stop Shipping<br>Filler Prompts.</h2>
-      <p class="lede">Clone the repo. Read the gate. Score your own master prompt before a client dashboard does it for you.</p>
+      <p class="lede">Clone the repo. Read the gate. Run the sandbox blind and score yourself against the traps before a client dashboard does it for you.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="https://github.com/emcdo411/cutler-draftkings-intern-use-case" target="_blank" rel="noopener">Clone The Repo →</a>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <div class="wrap">
       <div class="foot-grid">
-        <div class="foot-brand">CUTLER LAYER</div>
+        <div class="foot-brand">ATTRIBUTION INTEGRITY GATE</div>
         <div class="foot-links">
           <a href="https://github.com/emcdo411/cutler-draftkings-intern-use-case" target="_blank" rel="noopener">GitHub</a>
           <a href="#facts">Supplement Facts</a>
-          <a href="#ingredients">Ingredients</a>
+          <a href="#layer">The Layer</a>
         </div>
       </div>
       <div class="disclaimer">
         These statements have not been evaluated by the FDA. They have been evaluated by the Attribution Integrity Gate.
-        This page documents an internal Havas Edge / Greg Cutler director-level stress-test exercise design. The master
-        prompt answer key, skill package, and relationship-history reference material are NDA-sensitive and stay off this
-        page by design — only the disclosed scenario and the fact of evaluation are meant for participants. Epoch
-        Frameworks LLC | Erwin Maurice McDonald | DACR License v2.6.
+        This page documents a director-level stress-test exercise design for performance media AI governance and the decision layer built above it. Every client, person, initiative, and number on this page and in the sandbox is invented. The answer key, evaluator package, scored submissions, and any engagement-specific material are held privately and are not in the public repository. Attribution Integrity Gate and AI Council Decision Layer: McDonald (2026). Epoch Frameworks LLC | Erwin Maurice McDonald | DACR License v2.6.
       </div>
     </div>
   </footer>
 
 <script>
   (function(){
-    var els = document.querySelectorAll('.reveal');
-    if(!('IntersectionObserver' in window)){ els.forEach(function(el){ el.classList.add('in'); }); return; }
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        if(entry.isIntersecting){ entry.target.classList.add('in'); io.unobserve(entry.target); }
-      });
-    }, {threshold:0.12});
-    els.forEach(function(el){ io.observe(el); });
+    var els=document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window)){els.forEach(function(el){el.classList.add('in');});return;}
+    var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0.12});
+    els.forEach(function(el){io.observe(el);});
   })();
 </script>
-
 </body>
 </html>
